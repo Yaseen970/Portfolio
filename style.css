@@ -1,0 +1,420 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,600);
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+}
+
+/* Clearfix hack */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  font-family: 'Dosis', Calibri, Arial, sans-serif;
+  color: #fff;
+  
+ 
+}
+#about {
+  background-image: url("F:/GOA/IMG20230112180305.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Fix the no-repeat issue */
+  height: 120vh; /* You can adjust this to fit your needs */
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Fix the percentage error */
+  width: 100%; /* Or set a specific width */
+  max-width: 500px; /* Adjust as needed */
+  height: auto;
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.word0, .word1, .word2, .word3, .word4 {
+  display: inline-block;
+  opacity: 0;
+  font-size: 5rem;
+  animation: fadeIn 1s forwards;
+}
+
+.word0 { animation-delay: 0.5s; }
+.word1 { animation-delay: 1s; }
+.word2 { animation-delay: 1.5s; }
+.word3 { animation-delay: 2s; }
+.word4 { animation-delay: 2.5s; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Letter-by-letter animation */
+.name-container span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: calc(0.2s * var(--i));
+  margin-right: 4px;
+  font-size: 60px;
+  color: #3498db;
+}
+
+/* General styles */
+#greeting {
+  font-size: 40px;
+  color: #333;
+}
+
+.bio-text {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  padding-left: 50px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center; /* Ensures text and icon align properly */
+  margin: 0 30px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size to your preference */
+}
+
+header nav ul li img {
+  width: 70px; /* Adjust icon size to fit well with text */
+  height: auto;
+  ;
+  margin-right: 50px; /* Creates space between icon and text */
+}
+header nav ul li img+img{
+  margin-left: 50px;
+}
+/* Remove any button-like appearance */
+header nav ul li a:hover {
+  background: none; /* Ensure there's no hover effect like a button */
+  border: none; /* Ensure there's no border like a button */
+  padding: 0;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+header nav ul {
+  padding: 10px 0; /* Adds a bit of space above and below the menu for better spacing */
+}
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.project-img {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project, .experience, .education {
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Social Media Section */
+#social-media {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#social-media h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+  text-align: right;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+#experience {
+  background-color: aqua;
+  font-size: 24px;
+  transition: 0.4s;
+}
+
+#about {
+  background-color: lightblue;
+  color: black;
+}
+#skills {
+  background-color: #b17aa5;
+  padding: 50px 0;
+  text-align: center;
+  
+}
+
+#skills h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skill-category {
+  margin-bottom: 40px;
+}
+
+.skill-category h3 {
+  font-size: 28px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skill {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-inline-start: auto;
+}
+
+.skill h4 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+
+
+#social-icons {
+  background-color: burlywood;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: #E38445;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.menu-btn:hover {
+  background-color: #D0733A;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn:active {
+  transform: scale(1.05);
+  background-color: #C1622F;
+}
