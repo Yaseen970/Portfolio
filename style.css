@@ -28,7 +28,7 @@ body {
  
 }
 #about {
-  background-image: url("http://C:/Users/yasee/Downloads/Sky.jpg");
+  background-image: url("../Downloads/Sky.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; /* Fix the no-repeat issue */
