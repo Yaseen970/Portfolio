@@ -28,13 +28,33 @@ body {
  
 }
 #about {
-  background-image: url("F:/GOA/IMG20230112180305.jpg");
+  background-image: url("./Pictures/Sky.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; /* Fix the no-repeat issue */
   height: 120vh; /* You can adjust this to fit your needs */
   position: relative;
 }
+#about p{
+  animation: fadeSlideIn 10s ease-in-out forwards;;
+  font-size: 40px;
+  font-weight: bold;
+  color:rgba(204, 224, 24, 0.975)
+  
+  
+
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+
 
 .image-container {
   position: relative;
@@ -75,10 +95,10 @@ body {
 }
 
 .word0 { animation-delay: 0.5s; }
-.word1 { animation-delay: 1s; }
-.word2 { animation-delay: 1.5s; }
-.word3 { animation-delay: 2s; }
-.word4 { animation-delay: 2.5s; }
+.word1 { animation-delay: 2s; }
+.word2 { animation-delay: 3.5s; }
+.word3 { animation-delay: 5s; }
+.word4 { animation-delay: 6.5s; }
 
 @keyframes fadeInUp {
   0% {
@@ -266,13 +286,13 @@ footer {
 }
 
 #experience {
-  background-color: aqua;
+  background-color: rgb(255, 136, 0);
   font-size: 24px;
   transition: 0.4s;
 }
 
 #about {
-  background-color: lightblue;
+  background-color: rgb(172, 179, 181);
   color: black;
 }
 #skills {
@@ -418,3 +438,12 @@ nav ul li {
   transform: scale(1.05);
   background-color: #C1622F;
 }
+
+  #education {
+      
+      background-color:goldenrod;
+        display: block;  /* Ensure this is not set to 'none' */
+        visibility: visible;  /* Make sure visibility is not 'hidden' */
+    }
+    
+  
