@@ -28,7 +28,11 @@ body {
  
 }
 #about {
+<<<<<<< HEAD
   background-image: url("./Pictures/Sky.jpg");
+=======
+  background-image: url("../Downloads/Sky.jpg");
+>>>>>>> 72b5d9c39450a13ef5c4956ceb1b7b94496d0e31
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; /* Fix the no-repeat issue */
