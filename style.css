@@ -28,19 +28,17 @@ body {
  
 }
 #about {
-<<<<<<< HEAD
   background-image: url("./Pictures/Sky.jpg");
-=======
-  background-image: url("../Downloads/Sky.jpg");
->>>>>>> 72b5d9c39450a13ef5c4956ceb1b7b94496d0e31
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; /* Fix the no-repeat issue */
   height: 120vh; /* You can adjust this to fit your needs */
   position: relative;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #about p{
-  animation: fadeSlideIn 10s ease-in-out forwards;;
+  animation: fadeSlideIn 6s ease-in-out forwards;;
   font-size: 40px;
   font-weight: bold;
   color:rgba(204, 224, 24, 0.975)
@@ -99,10 +97,10 @@ body {
 }
 
 .word0 { animation-delay: 0.5s; }
-.word1 { animation-delay: 2s; }
-.word2 { animation-delay: 3.5s; }
-.word3 { animation-delay: 5s; }
-.word4 { animation-delay: 6.5s; }
+.word1 { animation-delay: 1s; }
+.word2 { animation-delay: 1.5s; }
+.word3 { animation-delay: 2s; }
+.word4 { animation-delay: 2.5s; }
 
 @keyframes fadeInUp {
   0% {
